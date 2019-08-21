@@ -1,0 +1,6 @@
+groups:
+  - name: sample
+    rules:
+      - alert: Hit Count went up
+        expr: hits > 2
+

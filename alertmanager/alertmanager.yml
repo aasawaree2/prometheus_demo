@@ -1,0 +1,24 @@
+global:
+
+route:
+  receiver: alert-emailer
+
+
+receivers:
+  - name: alert-emailer
+    email_configs:
+      - to: 'receiver@gmail.com'
+        send_resolved: false
+        from: 'sender@gmail.com'
+        smarthost: 'smtp.gmail.com:587'
+        require_tls: false
+        auth_username: 'sender@gmail.com'
+        auth_identity: 'sender@gmail.com'
+        auth_secret: 'sender@gmail.com'
+        auth_password: '******'
+    slack_configs:
+      - api_url: '<your-web-hook>'
+        send_resolved: false
+        username: '<your-username-for-posting-alerts>'
+        channel: '<your-channel-name>'
+
