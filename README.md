@@ -1,3 +1,7 @@
 # prometheus_demo
 
-Instrument Java code to collect metrics and export it to prometheus
+Simple demo for using Prometheus in Java 
+
+- Instrument Java code to collect metrics 
+- Publich metrics as per prometheus readable format
+- Configure Alerts - Email | Slack
